@@ -1,3 +1,4 @@
+import NavBar from './components/nav-bar'
 import './globals.css'
 
 export const metadata = {
@@ -11,8 +12,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="ja">
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
