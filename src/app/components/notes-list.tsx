@@ -9,8 +9,6 @@ type Note = Database['public']['Tables']['notes']['Row']
  * @returns
  */
 async function fetchNotes() {
-  // 意図的に2秒間の遅延を入れている
-  await new Promise((resolve) => setTimeout(resolve, 2000))
   const res = await fetch(`${process.env.url}/rest/v1/notes?select=*`, {
     headers: new Headers({
       apikey: process.env.apikey as string,
