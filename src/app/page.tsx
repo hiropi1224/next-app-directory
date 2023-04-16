@@ -1,6 +1,6 @@
 import NotesList from './components/notes-list'
 
-const Page = () => {
+export default function Page() {
   return (
     <main>
       <div className="m-10 text-center">
@@ -11,5 +11,3 @@ const Page = () => {
     </main>
   )
 }
-
-export default Page
