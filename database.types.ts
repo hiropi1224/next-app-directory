@@ -102,7 +102,7 @@ export interface Database {
         Insert: {
           completed?: boolean
           created_at?: string
-          id: string
+          id?: string
           title?: string | null
           user_id?: string | null
         }
