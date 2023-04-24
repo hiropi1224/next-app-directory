@@ -22,7 +22,7 @@ export default async function Notes() {
     <main className='mx-2 sm:mx-4 relative'>
       {/* ノート作成ページは未実装のため一覧ページに遷移 */}
       <Link
-        href='/api/notes'
+        href='/notes/new'
         className='absolute top-0 right-2 z-10 text-white bg-pink-500 hover:bg-pink-700 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2'
       >
         <svg
